@@ -14,7 +14,6 @@ import "./App.css";
 function App() {
   const [picture, setPicture] = useState();
   const [page, setPage] = useState([]);
-  const [counter, setCounter] = useState(0);
 
   function handleClick(item) {
     setPicture(item);
@@ -22,7 +21,6 @@ function App() {
 
   function handleButtonClick(item) {
     setPage((prev) => [item, ...prev]);
-    setCounter(counter + 1);
   }
 
   const [inputStr, setInputStr] = useState("");
